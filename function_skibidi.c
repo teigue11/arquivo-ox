@@ -30,7 +30,7 @@ int gravar(char matriz[3][3], char skibidiArquivo[])
             matriz[2][0], matriz[2][1], matriz[2][2]);
 
     fprintf(arquivo, "\n");
-    fprintf(arquivo, "Criado por Allyson Rodolfo (https://github.com/TravaChipzzxk\n");
+    fprintf(arquivo, "Criado por Derick Ferreira Correa");
 
     fclose(arquivo);
 }
