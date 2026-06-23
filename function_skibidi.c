@@ -1,10 +1,3 @@
-int validar(char c)
-{
-    if(c == 'X' || c == 'O')
-        return 1;
-
-    return 0;
-}
 int gravar(char matriz[3][3], char skibidiArquivo[])
 {
     FILE *arquivo;
