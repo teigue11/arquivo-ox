@@ -16,7 +16,7 @@ int gravar(char matriz[3][3], char skibidiArquivo[])
     fprintf(arquivo, "| %c | %c | %c |\n",
             matriz[1][0], matriz[1][1], matriz[1][2]);
 
-    fprintf(arquivo, "| %c | %c | %c |\n",
+    fprintf(arquivo, "| %c | %c | %c |\n", 
             matriz[2][0], matriz[2][1], matriz[2][2]);
 
     fprintf(arquivo, "\n");
