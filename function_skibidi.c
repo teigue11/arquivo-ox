@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int validar(char c)
 {
     if(c == 'X' || c == 'O')
@@ -7,17 +5,16 @@ int validar(char c)
 
     return 0;
 }
-
 int gravar(char matriz[3][3], char skibidiArquivo[])
 {
     FILE *arquivo;
 
     arquivo = fopen(skibidiArquivo, "w");
 
-    if(arquivo == NULL)
+    if (arquivo == NULL)
     {
-        printf("Erro ao criar arquivo\n");
-        return;
+        printf("Erro ao abrir o arquivo\n");
+        return 0;
     }
 
     fprintf(arquivo, "| %c | %c | %c |\n",
@@ -33,4 +30,6 @@ int gravar(char matriz[3][3], char skibidiArquivo[])
     fprintf(arquivo, "Criado por Derick Ferreira Correa");
 
     fclose(arquivo);
+
+    return 1;
 }
